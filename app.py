@@ -468,6 +468,7 @@ with tab_data:
         st.markdown("#### Descriptive Statistics")
         desc_stats = df['per capita income (US$)'].describe().to_frame()
         desc_stats.columns = ['Value (US$)']
+        desc_stats['Value (US$)'] = desc_stats['Value (US$)'].astype(object)
         desc_stats.loc['mean', 'Value (US$)'] = f"${desc_stats.loc['mean', 'Value (US$)']:,.2f}"
         desc_stats.loc['std', 'Value (US$)'] = f"${desc_stats.loc['std', 'Value (US$)']:,.2f}"
         desc_stats.loc['min', 'Value (US$)'] = f"${desc_stats.loc['min', 'Value (US$)']:,.2f}"
