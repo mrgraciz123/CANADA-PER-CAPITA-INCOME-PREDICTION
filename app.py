@@ -338,8 +338,7 @@ with tab_dash:
         paper_bgcolor='rgba(0,0,0,0)',
         margin=dict(l=0, r=0, t=10, b=0),
         xaxis=dict(
-            title="Year",
-            titlefont=dict(color="#A0AEC0", size=14),
+            title=dict(text="Year", font=dict(color="#A0AEC0", size=14)),
             tickfont=dict(color="#CBD5E0", size=12),
             gridcolor="rgba(255, 255, 255, 0.05)",
             zeroline=False,
@@ -347,8 +346,7 @@ with tab_dash:
             linecolor="rgba(255, 255, 255, 0.1)"
         ),
         yaxis=dict(
-            title="Per Capita Income (US$)",
-            titlefont=dict(color="#A0AEC0", size=14),
+            title=dict(text="Per Capita Income (US$)", font=dict(color="#A0AEC0", size=14)),
             tickfont=dict(color="#CBD5E0", size=12),
             gridcolor="rgba(255, 255, 255, 0.05)",
             zeroline=False,
